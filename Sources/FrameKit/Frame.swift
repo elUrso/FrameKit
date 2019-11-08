@@ -1,22 +1,18 @@
 //
 //  Frame.swift
-//  FrameKit
+//  
 //
-//  Created by Vitor Silva on 13/08/19.
+//  Created by Vitor Silva on 01/11/19.
 //
 
 import Foundation
 
 public protocol Frame {
-    func display() -> HTMLDocument
+    func synthesize() -> HTMLElement
 }
 
-public protocol Parent {
-    var children: [Frame] { get }
-}
-
-public protocol Stateful {
-    associatedtype State: Context
-    associatedtype Result: Frame
-    static func synthesise(from: State) -> Result
+extension Array where Element == Frame {
+    func innerSynthesize() -> [HTMLElementContent] {
+        return self.map{.element($0.synthesize())}
+    }
 }

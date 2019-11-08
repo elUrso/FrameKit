@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "81824300-19EE-42B7-8B33-614375516961"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A74B3544-632C-41C2-8DB6-3470BE748583"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/FrameKitTests/FrameKitTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "testBlank()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A74B3544-632C-41C2-8DB6-3470BE748583 - 672fef85705263ca"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FrameKitTests.FrameKitTests.testBlank() -&gt; ()"
+                  moduleName = "FrameKitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitorsilva/Documents/src/FrameKit/Tests/FrameKitTests/FrameKitTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "A74B3544-632C-41C2-8DB6-3470BE748583 - 17d5fde2bca5c51d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; (FrameKit.HTMLHead, FrameKit.HTMLBody) in FrameKitTests.FrameKitTests.testBlank() -&gt; ()"
+                  moduleName = "FrameKitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitorsilva/Documents/src/FrameKit/Tests/FrameKitTests/FrameKitTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "14">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09ECA6A4-F977-43E3-AEA2-4D37FA36EDC3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/FrameKitTests/FrameKitTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "testBlank()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -2,9 +2,16 @@
 
 A library to design web pages without the web part.
 
-## What can I do with FrameKit?
+## Frames and Contexts
 
-FrameKit enables you to quickly prototype webpages and integrate with a web server.
+A frame visual representation of something. For example:
+
+```swift
+let page: some Frame {
+    Button("OK")
+}
+```
+
 
 ## Concepts
 
