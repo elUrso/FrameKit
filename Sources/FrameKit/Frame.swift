@@ -12,7 +12,7 @@ public protocol Frame {
 }
 
 extension Array where Element == Frame {
-    func innerSynthesize() -> [HTMLElementContent] {
-        return self.map{.element($0.synthesize())}
+    func innerSynthesize() -> [HTMLElement] {
+        return self.map{$0.synthesize()}
     }
 }

@@ -34,18 +34,18 @@ public class PageBuilder {
 }
 
 public struct HTMLHead: Frame {
-    let inner: [Frame]
+    let inner: [Representable]
     
     public func synthesize() -> HTMLElement {
-        return HTMLElement(tag: "head", selfClosing: false, meta: [:], inner: inner.innerSynthesize())
+        return HTMLElement(tag: "head", selfClosing: false, meta: [:], inner: inner.innerRepresent())
     }
     
-    public init(@ListBuilder<Frame> _ closure: () -> [Frame]) {
+    public init(@ListBuilder<Representable> _ closure: () -> [Representable]) {
         inner = closure()
     }
     
     
-    public init(_ closure: () -> Frame) {
+    public init(_ closure: () -> Representable) {
         inner = [closure()]
     }
     
@@ -55,17 +55,17 @@ public struct HTMLHead: Frame {
 }
 
 public struct HTMLBody: Frame {
-    let inner: [Frame]
+    let inner: [Representable]
     
     public func synthesize() -> HTMLElement {
-        return HTMLElement(tag: "body", selfClosing: false, meta: [:], inner: inner.innerSynthesize())
+        return HTMLElement(tag: "body", selfClosing: false, meta: [:], inner: inner.innerRepresent())
     }
     
-    public init(@ListBuilder<Frame> _ closure: () -> [Frame]) {
+    public init(@ListBuilder<Representable> _ closure: () -> [Representable]) {
         inner = closure()
     }
     
-    public init(_ closure: () -> Frame) {
+    public init(_ closure: () -> Representable) {
         inner = [closure()]
     }
     

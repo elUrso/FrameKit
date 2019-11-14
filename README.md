@@ -2,6 +2,28 @@
 
 A library to design web pages without the web part.
 
+
+## Frames, Representables, Layouts
+
+Webpages are content based and frames are resposible for expressing content structure.
+
+Representables is something that can be inserted into a HTMLElement, which may not only be a HTMLElement.
+
+eg: <p><i>Italic</i> text.<p> ->
+
+Paragraph {
+    Italics {
+        "Italic"
+    }
+    " text."
+}
+
+Layouts are stylizes for content. Layouts require structure, this is why a Layout needs a structure: protocol Layout<Structure, Model>
+Styles are direc applyed to the frame usign either direct scope or global scope
+
+
+
+
 ## Frames and Contexts
 
 A frame visual representation of something. For example:

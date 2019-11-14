@@ -15,10 +15,10 @@ public struct Paragraph: Frame {
     }
     
     public init(_ str: String) {
-        content = [.content(str)]
+        content = [.content(str.htmlEscaped)]
     }
     
-    public init(@ListBuilder<Frame> _ closure: () -> [Frame]) {
-        content = closure().innerSynthesize()
+    public init(@ListBuilder<Representable> _ closure: () -> [Representable]) {
+        content = closure().innerRepresent()
     }
 }
